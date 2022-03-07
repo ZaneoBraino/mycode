@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+import random
+# random.randint()
+
+# from random import randint
+# randint()
+
+card_types = ['A',2,3,4,5,6,7,8,9,10,10,10,10]
+
+i = 0
+playerscore = 0
+finalplayerscore = 0
+
+for (i < 2):
+    playerscore = random.randint(0, card_types, 2)
+    if (playerscore == 0 or playerscore == 1):
+      playerscore = 0
+      i -= 1
+
+    if (playerscore == 'A'):
+       acescore = input("you have an ace, would you like 1 or 11?")
+       finalplayerscore + acescore
+
+    finalplayerscore  = finalplayerscore + playerscore
+
+    i += 1
+
+
+print("Your score is " + finalplayerscore)
